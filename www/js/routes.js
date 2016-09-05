@@ -8,48 +8,64 @@ angular.module('app.routes', [])
   // Each state's controller can be found in controllers.js
   $stateProvider
 
-  /*.state('tirolibre', {
-    url: '/tirolibre',
-    templateUrl: 'templates/default.html',
+  .state('tirolibre', {
+    url: '/',
+    templateUrl:'index.html'
     abstract:true
   })
-*/
-  .state('canchas', {
+
+  
+  
+  .state('tirolibre.canchas', {
     url: '/canchas',
-    templateUrl: 'templates/canchas.html'
+    views{
+      'canchas': {
+        templateUrl:'templates/canchas.html'
+        }
+    }
   })
   
-  .state('noticias',{
+  /*.state('tabs.home', {
+      url: "/home",
+      views: {
+        'home-tab': {
+          templateUrl: "templates/home.html",
+          controller: 'HomeTabCtrl'
+        }
+      }
+    })*/
+  
+  /*.state('tirolibre.noticias',{
       url:'/noticias',
       templateUrl:'templates/prueba.html'
   })
 
-  .state('eventos',{
+  .state('tirolibre.eventos',{
       url:'/eventos',
       templateUrl:'templates/prueba.html'
   })
   
-  .state('reservas',{
+  .state('tirolibre.reservas',{
       url:'/reservas',
       templateUrl:'templates/prueba.html'
   })
   
-  .state('misgrupos',{
+  .state('tirolibre.misgrupos',{
       url:'/misgrupos',
       templateUrl:'templates/prueba.html'
   })
   
-  .state('misequipos',{
+  .state('tirolibre.misequipos',{
       url:'/misequipos',
       templateUrl:'templates/prueba.html'
   })
   
-  .state('contacto',{
+  .state('tirolibre.contacto',{
       url:'/contacto',
       templateUrl:'templates/prueba.html'
   })
-  
+  */
 
-  $urlRouterProvider.otherwise('/canchas');
+  $urlRouterProvider.otherwise('/tirolibre');
 
 });
