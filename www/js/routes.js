@@ -9,63 +9,74 @@ angular.module('app.routes', [])
   $stateProvider
 
   .state('tirolibre', {
-    url: '/',
-    templateUrl:'index.html'
+    url: '/tirolibre',
+    templateUrl: 'templates/default.html',
     abstract:true
   })
 
-  
-  
-  .state('tirolibre.canchas', {
-    url: '/canchas',
-    views{
-      'canchas': {
-        templateUrl:'templates/canchas.html'
+  .state('tirolibre.noticias', {
+    url: '/noticias',
+    views:{
+        'canchas':{
+            templateUrl:'templates/perfil.html'
         }
     }
   })
   
-  /*.state('tabs.home', {
-      url: "/home",
-      views: {
-        'home-tab': {
-          templateUrl: "templates/home.html",
-          controller: 'HomeTabCtrl'
+  .state('tirolibre.eventos', {
+    url: '/eventos',
+    views:{
+        'canchas':{
+            templateUrl:'templates/eventos.html'
         }
-      }
-    })*/
+    }
+  })
   
-  /*.state('tirolibre.noticias',{
-      url:'/noticias',
-      templateUrl:'templates/prueba.html'
+  .state('tirolibre.canchas', {
+    url: '/canchas',
+    views:{
+        'canchas':{
+            templateUrl:'templates/canchas.html'
+        }
+    }
+  })
+  
+  .state('tirolibre.torneos', {
+    url: '/torneos',
+    views:{
+        'canchas':{
+            templateUrl:'templates/torneos.html'
+        }
+    }
+  })
+  
+  .state('tirolibre.misgrupos', {
+    url: '/misgrupos',
+    views:{
+        'canchas':{
+            templateUrl:'templates/misgrupos.html'
+        }
+    }
+  })
+  
+  .state('tirolibre.misequipos', {
+    url: '/misequipos',
+    views:{
+        'canchas':{
+            templateUrl:'templates/misequipos.html'
+        }
+    }
   })
 
-  .state('tirolibre.eventos',{
-      url:'/eventos',
-      templateUrl:'templates/prueba.html'
+  .state('tirolibre.contacto', {
+    url: '/contacto',
+    views:{
+        'canchas':{
+            templateUrl:'templates/contacto.html'
+        }
+    }
   })
   
-  .state('tirolibre.reservas',{
-      url:'/reservas',
-      templateUrl:'templates/prueba.html'
-  })
-  
-  .state('tirolibre.misgrupos',{
-      url:'/misgrupos',
-      templateUrl:'templates/prueba.html'
-  })
-  
-  .state('tirolibre.misequipos',{
-      url:'/misequipos',
-      templateUrl:'templates/prueba.html'
-  })
-  
-  .state('tirolibre.contacto',{
-      url:'/contacto',
-      templateUrl:'templates/prueba.html'
-  })
-  */
-
-  $urlRouterProvider.otherwise('/tirolibre');
+  $urlRouterProvider.otherwise('/tirolibre/canchas');
 
 });
