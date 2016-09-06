@@ -18,7 +18,7 @@ angular.module('app.routes', [])
     url: '/noticias',
     views:{
         'contenido':{
-            templateUrl:'templates/perfil.html'
+            templateUrl:'templates/noticias.html'
         }
     }
   })
@@ -46,6 +46,24 @@ angular.module('app.routes', [])
     views:{
         'contenido':{
             templateUrl:'templates/torneos.html'
+        }
+    }
+  })
+  
+  .state('tirolibre.misreservas', {
+    url: '/misreservas',
+    views:{
+        'contenido':{
+            templateUrl:'templates/misreservas.html'
+        }
+    }
+  })
+  
+  .state('tirolibre.perfil', {
+    url: '/perfil',
+    views:{
+        'contenido':{
+            templateUrl:'templates/perfil.html'
         }
     }
   })
