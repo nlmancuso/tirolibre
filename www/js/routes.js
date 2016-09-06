@@ -17,7 +17,7 @@ angular.module('app.routes', [])
   .state('tirolibre.noticias', {
     url: '/noticias',
     views:{
-        'canchas':{
+        'contenido':{
             templateUrl:'templates/perfil.html'
         }
     }
@@ -26,7 +26,7 @@ angular.module('app.routes', [])
   .state('tirolibre.eventos', {
     url: '/eventos',
     views:{
-        'canchas':{
+        'contenido':{
             templateUrl:'templates/eventos.html'
         }
     }
@@ -35,7 +35,7 @@ angular.module('app.routes', [])
   .state('tirolibre.canchas', {
     url: '/canchas',
     views:{
-        'canchas':{
+        'contenido':{
             templateUrl:'templates/canchas.html'
         }
     }
@@ -44,7 +44,7 @@ angular.module('app.routes', [])
   .state('tirolibre.torneos', {
     url: '/torneos',
     views:{
-        'canchas':{
+        'contenido':{
             templateUrl:'templates/torneos.html'
         }
     }
@@ -53,7 +53,7 @@ angular.module('app.routes', [])
   .state('tirolibre.misgrupos', {
     url: '/misgrupos',
     views:{
-        'canchas':{
+        'contenido':{
             templateUrl:'templates/misgrupos.html'
         }
     }
@@ -62,7 +62,7 @@ angular.module('app.routes', [])
   .state('tirolibre.misequipos', {
     url: '/misequipos',
     views:{
-        'canchas':{
+        'contenido':{
             templateUrl:'templates/misequipos.html'
         }
     }
@@ -71,7 +71,7 @@ angular.module('app.routes', [])
   .state('tirolibre.contacto', {
     url: '/contacto',
     views:{
-        'canchas':{
+        'contenido':{
             templateUrl:'templates/contacto.html'
         }
     }
